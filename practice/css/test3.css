@@ -1,0 +1,95 @@
+.wrap { background: red; }
+header {background: yellow; }
+
+nav li { display: inline; margin-left: 0; margin-right: 20px; }
+
+.main { margin-top: 30px; padding-bottom: 10px; }
+.primary { background: gray; }
+aside { background: green; }
+
+section {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 15px;
+}
+
+section h2 { font-size: 14px; margin-bottom: 5px; }
+
+
+blockquote {
+	font-style: italic;
+	color: #ccc;
+	font-size: 15px;
+	line-height: 20px;
+	padding-left: 25px;
+	position: relative;
+}
+
+blockquote p:before,
+blockquote p:after {
+	font-size: 40px;
+	font-style: italic;
+	color: #000;
+}
+
+blockquote p:first-child:before {
+	content: '“';
+	position: absolute;
+	top: 7px;
+	left: 0;
+}
+
+blockquote p:last-child:after {
+	content: '”';
+	float: right;
+	position: absolute;
+	bottom: -7px;
+	right: 0;
+}
+
+
+/* tour photos */
+#tour {
+	width: 210px;
+	position: relative;
+	float: left;
+}
+.photos {
+	position: absolute;
+	left: 210px;
+	top: 0;
+	display: none;
+	min-width: 640px;
+}
+#tour .photos li {
+    list-style: none outside none;
+	display: inline;
+    background: none repeat scroll 0 0 #252B30;
+    border: 1px solid #121415;
+    float: left;
+    margin-left: 20px;
+    max-width: 170px;
+    padding: 5px 5px 0;
+    position: relative;
+    width: 170px;
+}
+#tour .photos li img{
+	width: 100%;
+	height: auto;
+}
+#tour .photos span {
+	color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 5px;
+    display: none;
+    font-size: 14px;
+    height: 30px;
+    left: 5px;
+    line-height: 30px;
+    position: absolute;
+    right: 5px;
+    text-indent: 10px;
+    top: auto;
+}
